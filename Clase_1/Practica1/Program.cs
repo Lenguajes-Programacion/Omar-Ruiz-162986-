@@ -8,9 +8,11 @@ namespace Practica_1
 {
     class Program
     {
-        static void Main (string[] args)
+        string nombre = "Omar R";
+
+        static void Main (string[] args) //primera funcion que correra
         {
-            Console.WriteLine("Hola Mundo!!!!!");
+            Console.WriteLine("Hola Mundo!!!!!" + this.nombre);
             Console.ReadKey();
         }
     }
