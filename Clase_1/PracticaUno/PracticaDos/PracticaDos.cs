@@ -16,6 +16,7 @@ namespace PracticaDos
             int Valor2;
             int resultado;
             string opcion;
+            bool closeapp = true;
 
             Console.WriteLine("Ingrese el primer numero");
             Valor1 = Convert.ToInt32(Console.ReadLine());
@@ -28,30 +29,33 @@ namespace PracticaDos
             Console.WriteLine("(*) para Multiplicar");
             Console.WriteLine("(/) para Dividir");
             opcion = Console.ReadLine();
-            
-            switch (opcion)
+
+            do
             {
-                case "+":
-                    Console.WriteLine("el resultado de la suma es:");
-                    resultado = Valor1 + Valor2;
-                    Console.WriteLine("{0} + {1} = {2}", Valor1, Valor2, resultado);
-                    break;
-                case "-":
-                    Console.WriteLine("el resultado de la resta es:");
-                    resultado = Valor1 - Valor2;
-                    Console.WriteLine("{0} - {1} = {2}", Valor1, Valor2, resultado);
-                    break;
-                case "*":
-                    Console.WriteLine("el resultado de la suma es:");
-                    resultado = Valor1 * Valor2;
-                    Console.WriteLine("{0} * {1} = {2}", Valor1, Valor2, resultado);
-                    break;
-                case "/":
-                    Console.WriteLine("el resultado de la suma es:");
-                    resultado = Valor1 / Valor2;
-                    Console.WriteLine("{0} / {1} = {2}", Valor1, Valor2, resultado);
-                    break;
-            }
+                switch (opcion)
+                {
+                    case "+":
+                        Console.WriteLine("el resultado de la suma es:");
+                        resultado = Valor1 + Valor2;
+                        Console.WriteLine("{0} + {1} = {2}", Valor1, Valor2, resultado);
+                        break;
+                    case "-":
+                        Console.WriteLine("el resultado de la resta es:");
+                        resultado = Valor1 - Valor2;
+                        Console.WriteLine("{0} - {1} = {2}", Valor1, Valor2, resultado);
+                        break;
+                    case "*":
+                        Console.WriteLine("el resultado de la suma es:");
+                        resultado = Valor1 * Valor2;
+                        Console.WriteLine("{0} * {1} = {2}", Valor1, Valor2, resultado);
+                        break;
+                    case "/":
+                        Console.WriteLine("el resultado de la suma es:");
+                        resultado = Valor1 / Valor2;
+                        Console.WriteLine("{0} / {1} = {2}", Valor1, Valor2, resultado);
+                        break;
+                }
+            } while ( closeapp);
             Console.ReadKey();
         }
     }
