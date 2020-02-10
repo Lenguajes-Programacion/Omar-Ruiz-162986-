@@ -10,35 +10,46 @@ namespace PracticaDos
         // responder un resulado en int 
         
         
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             int Valor1;
             int Valor2;
-            int R;
-            string calculadora; 
-            
-            Console.WriteLine("Bienvenido, seleciona la funcion a ejecutar \n");
-            Console.WriteLine("ingrese el primer numero");
+            int resultado;
+            string opcion;
+
+            Console.WriteLine("Ingrese el primer numero");
             Valor1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("ingrese el segundo numero");
+            Console.WriteLine("Ingrese el segundo numero");
             Valor2 = Convert.ToInt32(Console.ReadLine());
-           
-            switch (calculadora)
+
+            Console.WriteLine("Ingrese una opcion en la calculadora");
+            Console.WriteLine("(+) para sumar");
+            Console.WriteLine("(-) para restar");
+            Console.WriteLine("(*) para Multiplicar");
+            Console.WriteLine("(/) para Dividir");
+            opcion = Console.ReadLine();
+            
+            switch (opcion)
             {
-                case 1:
-                    Console.WriteLine("Es una suma");
+                case "+":
+                    Console.WriteLine("el resultado de la suma es:");
+                    resultado = Valor1 + Valor2;
+                    Console.WriteLine("{0} + {1} = {2}", Valor1, Valor2, resultado);
                     break;
-                case 2:
-                    Console.WriteLine("Es una Resta");
+                case "-":
+                    Console.WriteLine("el resultado de la resta es:");
+                    resultado = Valor1 - Valor2;
+                    Console.WriteLine("{0} - {1} = {2}", Valor1, Valor2, resultado);
                     break;
-                case 3:
-                    Console.WriteLine("Es una Multiplicacion");
+                case "*":
+                    Console.WriteLine("el resultado de la suma es:");
+                    resultado = Valor1 * Valor2;
+                    Console.WriteLine("{0} * {1} = {2}", Valor1, Valor2, resultado);
                     break;
-                case 4:
-                    Console.WriteLine("Es una Multiplicacion");
-                    break;
-                default:
-                    Console.WriteLine("los argumentos no cuentan como operador valido");
+                case "/":
+                    Console.WriteLine("el resultado de la suma es:");
+                    resultado = Valor1 / Valor2;
+                    Console.WriteLine("{0} / {1} = {2}", Valor1, Valor2, resultado);
                     break;
             }
             Console.ReadKey();
