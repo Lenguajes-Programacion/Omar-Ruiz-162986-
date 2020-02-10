@@ -1,22 +1,13 @@
 ﻿using System;
-
 namespace PracticaDos
 {
     class PracticaDos
     {
-        //Proyecto Calculadora
-        //se espera recivir los argumentos valor1 (int) valor2(string) operador3()
-        //valor 3 (int)
-        // responder un resulado en int 
-
-
         public static void Main(string[] args)
         {
             int Valor1;
             int Valor2;
             int resultado;
-            string opcion;
-
             string continuar = null;
 
             Console.WriteLine("Ingrese el primer numero");
@@ -29,7 +20,7 @@ namespace PracticaDos
             Console.WriteLine("(-) para restar");
             Console.WriteLine("(*) para Multiplicar");
             Console.WriteLine("(S) para salir");
-            opcion = Console.ReadLine();
+            string opcion = Console.ReadLine();
 
             do
             {
@@ -52,13 +43,14 @@ namespace PracticaDos
                         break;
                     case "S":
                         Console.WriteLine("hasta la proxima");
+                        Console.ReadKey();
                         break;
 
                 }
-                Console.WriteLine("Desea Continuar con la calculadora? S/N");
+                Console.WriteLine("Desea Continuar con la calculadora? Si/No");
                 continuar = Console.ReadLine();
 
-            } while (continuar == "S" || continuar == "s");
+            } while (continuar == "Si" || continuar == "si");
             Console.ReadKey();
         }
     }
