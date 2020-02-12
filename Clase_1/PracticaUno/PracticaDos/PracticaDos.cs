@@ -12,26 +12,20 @@
                                         int resultado2 = 0;
                                         string continuar1 = null;
                                         string continuar2 = null;
-           
-            
-            
-
-
-                                    Console.WriteLine("Ingrese el primer numero");
-                                    Valor1 = Convert.ToInt32(Console.ReadLine());
-                                    Console.WriteLine("Ingrese el segundo numero");
-                                    Valor2 = Convert.ToInt32(Console.ReadLine());
-
-                                    Console.WriteLine("Ingrese una opcion en la calculadora");
-                                    Console.WriteLine("(+) para sumar");
-                                    Console.WriteLine("(-) para restar");
-                                    Console.WriteLine("(*) para Multiplicar");
-                                    Console.WriteLine("(S) para salir");
-                                    string opcion = Console.ReadLine();
-
                                     do
                                     {
-                                        switch (opcion)
+                Console.WriteLine("Ingrese el primer numero");
+                Valor1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Ingrese el segundo numero");
+                Valor2 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Ingrese una opcion en la calculadora");
+                Console.WriteLine("(+) para sumar");
+                Console.WriteLine("(-) para restar");
+                Console.WriteLine("(*) para Multiplicar");
+                Console.WriteLine("(S) para salir");
+                string opcion = Console.ReadLine();
+                switch (opcion)
                                         {
                                             case "+":
                                                 Console.WriteLine("el resultado de la suma es:");
