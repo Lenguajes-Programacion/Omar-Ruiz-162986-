@@ -1,0 +1,6 @@
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\obj\Debug\EntregaUno162986.csprojAssemblyReference.cache
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\bin\Debug\EntregaUno162986.exe.config
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\bin\Debug\EntregaUno162986.exe
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\bin\Debug\EntregaUno162986.pdb
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\obj\Debug\EntregaUno162986.exe
+C:\Users\alumno\Desktop\Omar-Ruiz-162986-\EntregaUno162986\EntregaUno162986\obj\Debug\EntregaUno162986.pdb
