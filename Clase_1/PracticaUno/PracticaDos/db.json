@@ -1,3 +1,7 @@
 {
-
+  "key":  "value",
+  "2020-02-21": {
+    "operacion": "5+5",
+    "resultado": 10
+  }
 }

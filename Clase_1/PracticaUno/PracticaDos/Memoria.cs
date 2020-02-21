@@ -10,13 +10,12 @@ namespace PracticaDos
     {
         public void GuardadMemoria()
         {
-            string ArchivoDB = "../db.json";
+            string ArchivoDB = "../../../db.json";
             StreamReader reader = new StreamReader(ArchivoDB);
             var dbJSON = reader.ReadToEnd();
             var dbObject = JObject.Parse(dbJSON);
-            
-
-            
+            var result = dbObject.ToString();
+            Console.WriteLine(result);
         }
     }
 }

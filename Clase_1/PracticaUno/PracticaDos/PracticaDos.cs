@@ -23,7 +23,9 @@
                 Console.WriteLine("(+) para sumar");
                 Console.WriteLine("(-) para restar");
                 Console.WriteLine("(*) para Multiplicar");
+                Console.WriteLine("(M) para Memoria");
                 Console.WriteLine("(S) para salir");
+                
                 string opcion = Console.ReadLine();
                 switch (opcion)
                                         {
@@ -66,7 +68,12 @@
                             resultado2 = resultado * resultado1;
                             Console.WriteLine("el resultado es:" + resultado2);
                             break;
-                                            case "S":
+
+                    case "M":
+                        Memoria memo = new Memoria();
+                        memo.GuardadMemoria();
+                        break;
+                    case "S":
                                                 Console.WriteLine("hasta la proxima");
                                                 Console.ReadKey();
                                                 break;
