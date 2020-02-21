@@ -14,8 +14,17 @@ namespace PracticaDos
             StreamReader reader = new StreamReader(ArchivoDB);
             var dbJSON = reader.ReadToEnd();
             var dbObject = JObject.Parse(dbJSON);
-            var result = dbObject.ToString();
-            Console.WriteLine(result);
+            //Prueba de lectura de archivo db
+            //var result = dbObject.ToString();
+            //var result = dbObject["arreglo"].ToString();
+            //var result = dbObject["arreglo"][0].ToString();
+           
+            //lectuea de json iterable
+            foreach(var item in dbObject)
+            {
+                Console.WriteLine("dato en memoria:");
+                Console.WriteLine(item.ToString());
+            }
         }
     }
 }
