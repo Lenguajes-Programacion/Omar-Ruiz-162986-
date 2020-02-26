@@ -20,11 +20,30 @@ namespace PracticaDos
             //var result = dbObject["arreglo"][0].ToString();
            
             //lectuea de json iterable
-            foreach(var item in dbObject)
+            foreach((var key, var item) in dbObject)
             {
                 Console.WriteLine("dato en memoria:");
+                MemoriaData memoriaData = new MemoriaData(DateTime.Now, item["operacion"].ToString(), (int)item["resultado"]);
                 Console.WriteLine(item.ToString());
             }
         }
     }
+    class MemoriaData
+    {
+        public DateTime fecha;
+        public string operacion;
+        public int resultado;
+
+        public MemoriaData (DateTime fecha, string operacion, int resultado)
+        {
+            fecha = fecha;
+            operacion = operacion;
+            resultado = resultado;
+
+        }
+    }
+
+
+
+
 }
