@@ -22,3 +22,5 @@ C:\Users\Usuario\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\obj\D
 C:\Users\Usuario\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\obj\Debug\netcoreapp3.0\PracticaDos.pdb
 C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\obj\Debug\netcoreapp3.0\PracticaDos.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Usuario\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaDos\obj\Debug\netcoreapp3.0\PracticaDos.csproj.CopyComplete
