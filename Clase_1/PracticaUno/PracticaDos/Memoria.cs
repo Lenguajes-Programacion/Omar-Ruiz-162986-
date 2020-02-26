@@ -18,13 +18,14 @@ namespace PracticaDos
             //var result = dbObject.ToString();
             //var result = dbObject["arreglo"].ToString();
             //var result = dbObject["arreglo"][0].ToString();
-           
+
             //lectuea de json iterable
-            foreach((var key, var item) in dbObject)
+            foreach ((var key, var item) in dbObject)
             {
                 Console.WriteLine("dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(DateTime.Now, item["operacion"].ToString(), (int)item["resultado"]);
-                Console.WriteLine(item.ToString());
+                Console.WriteLine(memoriaData.fecha.ToShortDateString());
+                Console.WriteLine(memoriaData.resultado.ToString());
             }
         }
     }
