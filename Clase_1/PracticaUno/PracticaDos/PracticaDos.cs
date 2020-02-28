@@ -76,7 +76,8 @@
                         // utilizar el resultado en una nueva operacion
                         // Guardad la nueva operacion en nuestra db.json
                         Console.WriteLine("Desea utilizar alguno de los datos guardados?");
-                        string db.json 
+                        string ArchivoDB = "../../../db.json";
+
 
                         break;
                     case "S":
