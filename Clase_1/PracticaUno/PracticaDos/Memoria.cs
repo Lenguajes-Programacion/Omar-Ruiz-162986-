@@ -24,8 +24,10 @@ namespace PracticaDos
             {
                 Console.WriteLine("dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(item.Key, item.Value["operacion"].ToString(), (float)item.Value["resultado"]);
-                Console.WriteLine(memoriaData.fecha.ToShortDateString());
+                Console.WriteLine("{0 - {1}", memoriaData.fecha.ToLongDateString());
+                Console.WriteLine(memoriaData.fecha.ToLongDateString());
                 Console.WriteLine(memoriaData.resultado.ToString());
+                Console.WriteLine("\n");
             }
         }
     }
