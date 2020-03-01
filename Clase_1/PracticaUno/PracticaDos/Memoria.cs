@@ -18,13 +18,16 @@ namespace PracticaDos
             //var result = dbObject.ToString();
             //var result = dbObject["arreglo"].ToString();
             //var result = dbObject["arreglo"][0].ToString();
-           
+
             //lectuea de json iterable
-            foreach((var key, var item) in dbObject)
+            foreach ( var item in dbObject)
             {
                 Console.WriteLine("dato en memoria:");
-                MemoriaData memoriaData = new MemoriaData(DateTime.Now, item["operacion"].ToString(), (int)item["resultado"]);
-                Console.WriteLine(item.ToString());
+                MemoriaData memoriaData = new MemoriaData(item.Key, item.Value["operacion"].ToString(), (float)item.Value["resultado"]);
+                Console.WriteLine("{0 - {1}", memoriaData.fecha.ToLongDateString());
+                Console.WriteLine(memoriaData.fecha.ToLongDateString());
+                Console.WriteLine(memoriaData.resultado.ToString());
+                Console.WriteLine("\n");
             }
         }
     }
@@ -34,9 +37,9 @@ namespace PracticaDos
         public string operacion;
         public int resultado;
 
-        public MemoriaData (DateTime fecha, string operacion, int resultado)
+        public MemoriaData (string date DateTime fecha, string operacion, int resultado)
         {
-            fecha = fecha;
+            fecha = DateTime.Parse(date);
             operacion = operacion;
             resultado = resultado;
 
