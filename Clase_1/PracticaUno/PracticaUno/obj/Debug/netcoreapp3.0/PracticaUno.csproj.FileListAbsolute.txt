@@ -9,3 +9,14 @@ C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\De
 C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.AssemblyInfo.cs
 C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.dll
 C:\Users\alumno\Desktop\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.pdb
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.exe
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.deps.json
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.runtimeconfig.json
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.runtimeconfig.dev.json
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.dll
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\bin\Debug\netcoreapp3.0\PracticaUno.pdb
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.csprojAssemblyReference.cache
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.AssemblyInfoInputs.cache
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.AssemblyInfo.cs
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.dll
+C:\Users\alumno\Documents\GitHub\Omar-Ruiz-162986-\Clase_1\PracticaUno\PracticaUno\obj\Debug\netcoreapp3.0\PracticaUno.pdb

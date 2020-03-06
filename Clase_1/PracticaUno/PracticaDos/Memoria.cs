@@ -10,6 +10,7 @@ namespace PracticaDos
     {
         public void GuardadMemoria()
         {
+           
             string ArchivoDB = "../../../db.json";
             StreamReader reader = new StreamReader(ArchivoDB);
             var dbJSON = reader.ReadToEnd();
@@ -30,7 +31,26 @@ namespace PracticaDos
                 Console.WriteLine("\n");
             }
         }
-    }
+
+        public void arreglo()
+        {
+            string[] Colores = ["Rojo", "Blanco", "morado"];
+            //List<string> colores = ["Rojo", "Blanco", "morado"];
+            //colores.Sort();
+            Array.Sort(Colores);
+            Array.ForEach(Colores, (item) => {
+                Console.WriteLine(item);
+            });
+            String color = Array.Find(Colores, (item) => {
+                return item.Length > 4; // el == es para poder comparar cada elemento con los de la lista
+            });
+            Console.WriteLine(color);
+            Console.WriteLine("Accede tus colores y separalos con comas (,):");
+            String ColorUser = Console.ReadLine();
+          //Un string Se puede convertitr en arrglo con su propiedad Splut, dandole un padron. si no tiene un patron pues no jala
+            String[] newColor = ColorUser.Split(',');
+            Console.WriteLine(newColor);
+        }
     class MemoriaData
     {
         public DateTime fecha;

@@ -12,7 +12,8 @@
                                         int resultado2 = 0;
                                         string continuar1 = null;
                                         string continuar2 = null;
-                                    do
+                                        Memoria memoria = new Memoria();
+            do
                                     {
                 Console.WriteLine("Ingrese el primer numero");
                 Valor1 = Convert.ToInt32(Console.ReadLine());
@@ -77,6 +78,7 @@
                         // Guardad la nueva operacion en nuestra db.json
                         Console.WriteLine("Desea utilizar alguno de los datos guardados?");
                         string ArchivoDB = "../../../db.json";
+                        memoria.arreglo();
 
 
                         break;
