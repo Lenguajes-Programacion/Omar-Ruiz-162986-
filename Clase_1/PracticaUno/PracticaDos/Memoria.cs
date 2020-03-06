@@ -51,6 +51,11 @@ namespace PracticaDos
             String[] newColor = ColorUser.Split(',');
             Console.WriteLine(newColor);
         }
+        public void multidimencional()
+        {
+            int[,] array = new int[4, 2];
+            Console.WriteLine(array);
+        }
     class MemoriaData
     {
         public DateTime fecha;
