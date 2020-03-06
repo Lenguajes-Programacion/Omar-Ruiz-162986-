@@ -72,12 +72,10 @@
 
                     case "M":
                         Memoria memo = new Memoria();
-                        memo.GuardadMemoria();
+                        memo.multidimencional();
                         //crear metodo que nos regrese el resultado seleccionado
                         // utilizar el resultado en una nueva operacion
                         // Guardad la nueva operacion en nuestra db.json
-                        Console.WriteLine("Desea utilizar alguno de los datos guardados?");
-                        string ArchivoDB = "../../../db.json";
                         memoria.arreglo();
 
 
