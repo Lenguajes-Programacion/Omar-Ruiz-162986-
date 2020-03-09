@@ -12,7 +12,8 @@
                                         int resultado2 = 0;
                                         string continuar1 = null;
                                         string continuar2 = null;
-                                    do
+                                        Memoria memoria = new Memoria();
+            do
                                     {
                 Console.WriteLine("Ingrese el primer numero");
                 Valor1 = Convert.ToInt32(Console.ReadLine());
@@ -71,12 +72,11 @@
 
                     case "M":
                         Memoria memo = new Memoria();
-                        memo.GuardadMemoria();
+                        memo.multidimencional();
                         //crear metodo que nos regrese el resultado seleccionado
                         // utilizar el resultado en una nueva operacion
                         // Guardad la nueva operacion en nuestra db.json
-                        Console.WriteLine("Desea utilizar alguno de los datos guardados?");
-                        string ArchivoDB = "../../../db.json";
+                        memoria.arreglo();
 
 
                         break;
