@@ -3,7 +3,8 @@
                             {
                                 class PracticaDos
                                 {
-                                    public static void Main(string[] args)
+        //public static void Main(string[] args)                            
+         static void calcu ()
                                     {
                                         int Valor1;
                                         int Valor2;
@@ -73,6 +74,7 @@
                     case "M":
                         Memoria memo = new Memoria();
                         memo.multidimencional();
+                        
                         //crear metodo que nos regrese el resultado seleccionado
                         // utilizar el resultado en una nueva operacion
                         // Guardad la nueva operacion en nuestra db.json

@@ -10,7 +10,7 @@ namespace PracticaDos
     {
         public void GuardadMemoria()
         {
-           
+
             string ArchivoDB = "../../../db.json";
             StreamReader reader = new StreamReader(ArchivoDB);
             var dbJSON = reader.ReadToEnd();
@@ -21,7 +21,7 @@ namespace PracticaDos
             //var result = dbObject["arreglo"][0].ToString();
 
             //lectuea de json iterable
-            foreach ( var item in dbObject)
+            foreach (var item in dbObject)
             {
                 Console.WriteLine("dato en memoria:");
                 MemoriaData memoriaData = new MemoriaData(item.Key, item.Value["operacion"].ToString(), (float)item.Value["resultado"]);
@@ -34,7 +34,7 @@ namespace PracticaDos
 
         public void arreglo()
         {
-            string[] Colores = ["Rojo", "Blanco", "morado"];
+            string[] Colores = { "Rojo", "Blanco", "morado" };
             //List<string> colores = ["Rojo", "Blanco", "morado"];
             //colores.Sort();
             Array.Sort(Colores);
@@ -47,7 +47,7 @@ namespace PracticaDos
             Console.WriteLine(color);
             Console.WriteLine("Accede tus colores y separalos con comas (,):");
             String ColorUser = Console.ReadLine();
-          //Un string Se puede convertitr en arrglo con su propiedad Splut, dandole un padron. si no tiene un patron pues no jala
+            //Un string Se puede convertitr en arrglo con su propiedad Splut, dandole un padron. si no tiene un patron pues no jala
             String[] newColor = ColorUser.Split(',');
             Console.WriteLine(newColor);
         }
@@ -56,22 +56,63 @@ namespace PracticaDos
             int[,] array = new int[4, 2];
             Console.WriteLine(array);
         }
-    class MemoriaData
-    {
-        public DateTime fecha;
-        public string operacion;
-        public int resultado;
 
-        public MemoriaData (string date DateTime fecha, string operacion, int resultado)
+        static void Main(String[] args)
         {
-            fecha = DateTime.Parse(date);
-            operacion = operacion;
-            resultado = resultado;
+            bool salir = false;
+            while (!salir)
+            {
+                Console.WriteLine("arreglo sencillo");
+                String[] sencillo = { "rojo", "Blanco", "morado" };
+                Console.WriteLine("[(0)]", string.Join(",", sencillo));
+                Console.WriteLine("Arreglo Dos Dimenciones");
+                int[,] dosDienciones = new int[5, 5];
+                for (int i = 0; i < dosDienciones.GetLength(0); i++) //se usa indicadores para comparar dato por dato
+                {
+                    for (int j = 0; j < dosDienciones.GetLength(1); j++)
+                    {
+                        Console.WriteLine("{0}, {1} = {2}", i, j, dosDienciones[i, j]);
+                    }
+                }
 
+                Console.WriteLine("Aregllo 3 Dimenciones");
+                int[,,] tresDimenciones = new int[5, 5, 5];
+                for (int i = 0; i < tresDimenciones.GetLength(0); i++) //se usa indicadores para comparar dato por dato
+                {
+                    for (int j = 0; j < tresDimenciones.GetLength(1); j++)
+                    {
+                        for (int k = 0; k < tresDimenciones.GetLength(2); k++)
+                        {
+                            tresDimenciones[i, j, k] = i + j + k;
+                            Console.WriteLine("{0},{1},{2} = {3}", i, j, k, tresDimenciones[i, j, k]);
+                        }
+                    }
+                }
+
+                //Console.WriteLine("[(0)]", string.Join(",", tresDimenciones));
+                //string exit = Console.ReadLine();
+
+                //Console.WriteLine("([0])", string.Join(",", Colores));
+
+            }
         }
+        class MemoriaData
+        {
+            internal readonly object resultado;
+            public DateTime fecha;
+            public string operacion;
+            public int Resultado;
+
+            public MemoriaData(string date, string operacion, float resultado)
+            {
+                fecha = DateTime.Parse(date);
+                operacion = operacion;
+                resultado = resultado;
+
+            }
+        }
+
+
+
     }
-
-
-
-
 }
