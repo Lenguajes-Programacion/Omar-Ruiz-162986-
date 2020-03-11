@@ -89,9 +89,11 @@ namespace PracticaDos
                     }
                 }
 
-                //Console.WriteLine("[(0)]", string.Join(",", tresDimenciones));
-                //string exit = Console.ReadLine();
-
+                string exit = Console.ReadLine();
+                if(exit == "y")
+                {
+                    salir = true;
+                }
                 //Console.WriteLine("([0])", string.Join(",", Colores));
 
             }
