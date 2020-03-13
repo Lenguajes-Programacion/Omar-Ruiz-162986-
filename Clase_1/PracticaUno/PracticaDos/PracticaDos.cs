@@ -3,8 +3,8 @@
                             {
                                 class PracticaDos
                                 {
-        //public static void Main(string[] args)                            
-         static void calcu ()
+        public static void Main(string[] args)                            
+    
                                     {
                                         int Valor1;
                                         int Valor2;
@@ -79,9 +79,8 @@
                         // utilizar el resultado en una nueva operacion
                         // Guardad la nueva operacion en nuestra db.json
                         memoria.arreglo();
-
-
                         break;
+
                     case "S":
                                                 Console.WriteLine("hasta la proxima");
                                                 Console.ReadKey();

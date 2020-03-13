@@ -8,6 +8,22 @@ namespace PracticaDos
 {
     class Memoria
     {
+        public List<MemoriaData> db = new List<MemoriaData>();
+        public Memoria()
+        {
+            db = new List<MemoriaData>();
+        }
+       
+        public void LeerMemoria()
+        {
+            ConsoleColor currentColor = Console.BackgroundColor;
+            string archivoDB = "../../../db.json";
+            StreamReader reader = new StreamReader(archivoDB);
+            var 
+             
+        }
+
+
         public void GuardadMemoria()
         {
 
@@ -57,7 +73,7 @@ namespace PracticaDos
             Console.WriteLine(array);
         }
 
-        static void Main(String[] args)
+        public void Arreglos ()
         {
             bool salir = false;
             while (!salir)
