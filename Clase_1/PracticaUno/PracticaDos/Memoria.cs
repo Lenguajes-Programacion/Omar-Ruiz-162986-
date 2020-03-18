@@ -19,33 +19,58 @@ namespace PracticaDos
             ConsoleColor currentColor = Console.BackgroundColor;
             string archivoDB = "../../../db.json";
             StreamReader reader = new StreamReader(archivoDB);
-            
-             
-        }
-
-
-        public void GuardadMemoria()
-        {
-
-            string ArchivoDB = "../../../db.json";
-            StreamReader reader = new StreamReader(ArchivoDB);
             var dbJSON = reader.ReadToEnd();
             var dbObject = JObject.Parse(dbJSON);
-            //Prueba de lectura de archivo db
-            //var result = dbObject.ToString();
-            //var result = dbObject["arreglo"].ToString();
-            //var result = dbObject["arreglo"][0].ToString();
+            int i = 0;
 
-            //lectuea de json iterable
             foreach (var item in dbObject)
             {
-                Console.WriteLine("dato en memoria:");
-                MemoriaData memoriaData = new MemoriaData(item.Key, item.Value["operacion"].ToString(), (float)item.Value["resultado"]);
-                Console.WriteLine("{0 - {1}", memoriaData.fecha.ToLongDateString());
-                Console.WriteLine(memoriaData.fecha.ToLongDateString());
-                Console.WriteLine(memoriaData.resultado.ToString());
-                Console.WriteLine("\n");
+
+                MemoriaData memoriaData = new MemoriaData(item.Key.ToString(), item.Value["operacion"].ToString(), item.Value["resultado"].ToString());
+                this.db.Add(memoriaData);
+                Console.WriteLine("Dato en memoria: ({0})", i);
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("{0} - {1}", memoriaData.fecha.ToLongDateString(),
+                memoriaData.fecha.ToLongTimeString());
+                Console.ResetColor();
+                Console.WriteLine("Operación: {0}", memoriaData.operacion);
+                Console.WriteLine("Resultado: {0}", memoriaData.Resultado.ToString());
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("----------------- \n");
+                Console.ForegroundColor = ConsoleColor.White;
+                i++;
             }
+        }
+
+        public int GetMemoriaData(String key)
+        {
+     
+            int index = int.Parse(key);
+            MemoriaData data = db[index];
+            return data.Resultado;
+        }
+
+        public void GuardarMemoria(MemoriaData data)
+        {
+            db.Add(data);
+            int i = 0;
+            db.ForEach((MemoriaData memoriaData) =>
+            {
+                Console.WriteLine("Dato en memoria: ({0})", i);
+                Console.BackgroundColor = ConsoleColor.Green;
+                Console.WriteLine("{0} - {1}", memoriaData.fecha.ToLongDateString(),
+                memoriaData.fecha.ToLongTimeString());
+                Console.ResetColor();
+                Console.WriteLine("Operación: {0}", memoriaData.operacion);
+                Console.WriteLine("Resultado: {0}", memoriaData.Resultado.ToString());
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("----------------- \n");
+                Console.ForegroundColor = ConsoleColor.White;
+                i++;
+            });
+            string json = JsonConvert.SerializeObject(db.ToArray(), Formatting.Indented);
+            string archivoDB = "../../../db.json";
+            File.WriteAllText(archivoDB, json);
         }
 
         public void arreglo()
@@ -116,16 +141,17 @@ namespace PracticaDos
         }
         class MemoriaData
         {
-            internal readonly object resultado;
+
             public DateTime fecha;
             public string operacion;
             public int Resultado;
 
-            public MemoriaData(string date, string operacion, float resultado)
+            public MemoriaData(String date, string operacion, String result)
             {
                 fecha = DateTime.Parse(date);
                 operacion = operacion;
-                resultado = resultado;
+                Resultado = int.Parse(result);
+
 
             }
         }
