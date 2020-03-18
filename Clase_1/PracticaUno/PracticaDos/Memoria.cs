@@ -50,7 +50,7 @@ namespace PracticaDos
             return data.Resultado;
         }
 
-        public void GuardarMemoria(MemoriaData data)
+        public void GuardarMemoria (MemoriaData data)
         {
             db.Add(data);
             int i = 0;
