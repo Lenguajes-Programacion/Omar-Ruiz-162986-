@@ -19,25 +19,8 @@ namespace PracticaDos
             ConsoleColor currentColor = Console.BackgroundColor;
             string archivoDB = "../../../db.json";
             StreamReader reader = new StreamReader(archivoDB);
-            var dbJSON = reader.ReadToEnd();
-            var dbObject = JObject.Parse(dbJSON);
-            int i = 0; 
-            foreach (var item in dbObject)
-            {
-                MemoriaData memoriaData = new MemoriaData(item.Key.ToString(), item.Value["operacion"].ToString(), item.Value["resultado"].ToString());
-                this.db.Add(memoriaData);
-                Console.WriteLine("Dato en memoria: ({0})", i);
-                Console.BackgroundColor = ConsoleColor.Green;
-                Console.WriteLine("{0} - {1}", memoriaData.fecha.ToLongDateString(),
-                memoriaData.fecha.ToLongTimeString());
-                Console.ResetColor();
-                Console.WriteLine("Operación: {0}", memoriaData.operacion);
-                Console.WriteLine("Resultado: {0}", memoriaData.resultado.ToString());
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("----------------- \n");
-                Console.ForegroundColor = ConsoleColor.White;
-                i++;
-            }
+            
+             
         }
 
 
