@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.IO;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text;
 
 namespace PracticaDos
 {
@@ -139,7 +140,7 @@ namespace PracticaDos
 
             }
         }
-        class MemoriaData
+       public class MemoriaData
         {
 
             public DateTime fecha;
