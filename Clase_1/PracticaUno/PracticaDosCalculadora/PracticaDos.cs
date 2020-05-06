@@ -71,13 +71,21 @@ namespace PracticaDos
                         resultado2 = resultado * resultado1;
                         Console.WriteLine("el resultado es:" + resultado2);
                         break;
+                    case "P":
+                        Console.WriteLine("Desea potenciar sus datos?");
 
-                    case "M":
+                        break;
+
+                    case "m":
                         Console.WriteLine("Accediendo a Memoria \n");
                         Console.WriteLine("-----------------\n");
+                  
                         String key = Console.ReadLine();
+                     
                         resultado = memoria.GetMemoriaData(key);
+                 
                         Console.WriteLine(resultado);
+                       
                         break;
 
                     case "mr":
@@ -91,7 +99,6 @@ namespace PracticaDos
                         break;
 
                 }
-
 
                 Console.WriteLine("Desea Continuar con la calculadora? Si/No");
                 continuar1 = Console.ReadLine();

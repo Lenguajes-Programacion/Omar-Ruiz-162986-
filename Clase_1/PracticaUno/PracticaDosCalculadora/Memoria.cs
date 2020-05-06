@@ -150,13 +150,14 @@ namespace PracticaDos
             public MemoriaData(String date, string operacion, String result)
             {
                 fecha = DateTime.Parse(date);
-                operacion = operacion;
+                operacion = operation;
                 Resultado = int.Parse(result);
 
 
             }
         }
 
+        
 
 
     }

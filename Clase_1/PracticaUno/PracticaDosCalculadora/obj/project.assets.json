@@ -58,11 +58,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDos\\PracticaDos.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDosCalculadora\\PracticaDos.csproj",
       "projectName": "PracticaDos",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDos\\PracticaDos.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDosCalculadora\\PracticaDos.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDos\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Omar-Ruiz-162986-\\Clase_1\\PracticaUno\\PracticaDosCalculadora\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
