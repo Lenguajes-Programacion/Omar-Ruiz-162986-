@@ -2,7 +2,7 @@
  
 namespace PracticaDos
 {
-   public class PracticaDos : Potencia
+   public class PracticaDos 
     {
          static void Main(string[] args)
         {
@@ -15,7 +15,7 @@ namespace PracticaDos
             string continuar1 = null;
             string continuar2 = null;
             Memoria memoria = new Memoria();
-            //Potencia Pote = new Potencia();
+        
             do
             {
                 
@@ -75,18 +75,7 @@ namespace PracticaDos
                         resultado2 = resultado * resultado1;
                         Console.WriteLine("el resultado es:" + resultado2);
                         break;
-                    case "P":
-                        Potencia Pote = new Potencia();
-                        Pote.valorpote = 0;
-                        Pote.valor1pote = 0;
-                        Pote.ValorUsuario = 0;
-
-                        Console.WriteLine("Dame el valor a sacar potencia");
-                         = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Dame el valor de la potencia");
-                   
-                        break;
-
+                    
                     case "m":
                         Console.WriteLine("Accediendo a Memoria \n");
                         Console.WriteLine("-----------------\n");
@@ -120,8 +109,8 @@ namespace PracticaDos
 
         }
     }
-    
 
+ 
 }
 
 
