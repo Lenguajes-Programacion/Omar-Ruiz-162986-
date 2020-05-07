@@ -150,9 +150,8 @@ namespace PracticaDos
             public MemoriaData(String date, string operacion, String result)
             {
                 fecha = DateTime.Parse(date);
-                operacion = operation;
                 Resultado = int.Parse(result);
-
+                //operacion = operation;
 
             }
         }

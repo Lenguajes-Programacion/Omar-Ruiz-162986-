@@ -2,30 +2,34 @@
  
 namespace PracticaDos
 {
-    class PracticaDos
+   public class PracticaDos : Potencia
     {
-        static void Main(string[] args)
+         static void Main(string[] args)
         {
             int Valor1;
             int Valor2;
             int resultado = 0;
             int resultado1 = 0;
             int resultado2 = 0;
+           
             string continuar1 = null;
             string continuar2 = null;
             Memoria memoria = new Memoria();
+            //Potencia Pote = new Potencia();
             do
             {
-
+                
                 Console.WriteLine("Ingrese el primer numero");
                 Valor1 = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Ingrese el segundo numero");
                 Valor2 = Convert.ToInt32(Console.ReadLine());
-
+                
+        
                 Console.WriteLine("Ingrese una opcion en la calculadora");
                 Console.WriteLine("(+) para sumar");
                 Console.WriteLine("(-) para restar");
                 Console.WriteLine("(*) para Multiplicar");
+                Console.WriteLine("(P) para potencia");
                 Console.WriteLine("(M) para Memoria");
                 Console.WriteLine("(MR) Borrar Memoria");
                 Console.WriteLine("(S) para salir");
@@ -72,8 +76,15 @@ namespace PracticaDos
                         Console.WriteLine("el resultado es:" + resultado2);
                         break;
                     case "P":
-                        Console.WriteLine("Desea potenciar sus datos?");
+                        Potencia Pote = new Potencia();
+                        Pote.valorpote = 0;
+                        Pote.valor1pote = 0;
+                        Pote.ValorUsuario = 0;
 
+                        Console.WriteLine("Dame el valor a sacar potencia");
+                         = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Dame el valor de la potencia");
+                   
                         break;
 
                     case "m":
@@ -109,7 +120,10 @@ namespace PracticaDos
 
         }
     }
+    
+
 }
+
 
  
     
